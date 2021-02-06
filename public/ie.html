@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="stylesheet" href="./ie.css">
+
+  <title>Website</title>
+  <meta name="description"
+  content="(descrição do site)" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:title"
+    content="(título do site)" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:description"
+    content="(descrição do site)" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="%PUBLIC_URL%/meta.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900">
+
+  <!-- Copy Link -->
+  <script type="application/javascript">
+    function copyToClipboard(value) {
+      const input = document.createElement('input')
+      input.value = value;
+      document.body.appendChild(input)
+      input.select();
+      document.execCommand('copy')
+      document.body.removeChild(input)
+      document.getElementsByClassName("button__wrapper")[0].innerHTML = "Copiado!"
+    }
+  </script>
+</head>
+
+<body>
+  <div class="not-supported">
+    <div class="not-supported__modal">
+      <p>Não possuimos suporte para o navegador Internet Explorer</p>
+      <p>Desculpe o transtorno. Entre com um dos navegadores informados abaixo para obter uma melhor experiência no site.</p>
+      <div class="not-supported__download">
+        <div>
+          <a href="https://www.google.com.br/chrome/index.html" target="_blank"><img src="chrome.png"/></a>
+          <p>Chrome</p>
+        </div>
+        <div>
+          <a href="https://www.mozilla.org/pt-BR/firefox/new/" target="_blank"><img src="firefox.png"/></a>
+          <p>Firefox</p>
+        </div>
+        <div>
+          <a href="https://www.opera.com/pt-br" target="_blank"><img src="opera.png"/></a>
+          <p>Opera</p>
+        </div>
+      </div>
+      <!-- <div class="not-supported__button">
+        <button class="button button--resize" onclick="copyToClipboard('about:blank')">
+          <span class="button__wrapper">Link de Acesso</span>
+        </button>
+      </div> -->
+    </div>
+  </div>
+</body>
+
+</html>
