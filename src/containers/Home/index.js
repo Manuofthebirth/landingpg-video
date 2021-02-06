@@ -2,17 +2,36 @@
 // import { useDispatch } from 'react-redux'
 import React from "react";
 import './index.scss'
-import Horses from '../../assets/horses.mp4'
 
+import Header from '../../components/Header'
 // import Button from '../../components/Button'
-// import {  } from 'react-feather';
+
+import Horses from '../../assets/horses.mp4'
+import { Facebook, Instagram, Linkedin } from 'react-feather';
+
 
 const Home = () => {
   return (
     <div className='home'>
+      <Header/>
+
       <video className="home__background" muted loop autoPlay >
         <source src={Horses} type="video/mp4"/>
       </video>
+
+      <div className="home__text">
+        <h2>Lorem ipsum</h2>
+        <h3>dolor sit amet</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Nisi culpa corrupti, aperiam incidunt sequi reiciendis dicta iusto iure natus eligendi!
+        </p>
+      </div>
+      
+      <ul className="home__social">
+        <li><Facebook /></li>
+        <li><Linkedin /></li>
+        <li><Instagram /></li>
+      </ul>
     </div>
   )
 }
