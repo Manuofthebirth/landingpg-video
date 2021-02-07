@@ -13,7 +13,6 @@ import { Facebook, Instagram, Linkedin } from 'react-feather';
 const Home = () => {
   return (
     <div className='home'>
-      <Header/>
       <div class="overlay"></div>
 
       <figure className="home__background">

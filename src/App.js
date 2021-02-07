@@ -4,10 +4,11 @@ import './styles/index.scss'
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from "react-router-dom"
 
 // COMPONENTS
+import Header from './components/Header'
 import Menu from './components/Menu'
 
 // CONTAINERS
@@ -20,6 +21,7 @@ export default function App() {
     <Router>
       <div className='row'>
         <div className='column'>
+          <Header/>
           <Switch>
             <Route exact={true} path="/">
               <Home/>
