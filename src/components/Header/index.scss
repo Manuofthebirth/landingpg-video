@@ -8,6 +8,7 @@
   height: 84px;
   padding: 0 5%;
   position: absolute;
+  z-index: 3;
 
   img {
     height: 38px;
@@ -52,7 +53,6 @@
   svg {
     color: #fff;
   }
-  z-index: 3;
 }
 
 .header__logo {
