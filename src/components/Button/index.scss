@@ -30,10 +30,14 @@
   }
 
   &--type-1 {
-    background: $color-green; /* Old browsers */
+    background: $color-dark-blue; /* Old browsers */
     color: white;
-
+    min-height: 40px;
+    font-size: 12px;
+    border-radius: 25px;
+    
     &:hover, &:focus {
+      background: $color-blue; /* Old browsers */
       color: white;
     }
   }

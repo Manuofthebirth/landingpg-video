@@ -13,7 +13,8 @@ const Button = ({
   width = '100%',
   height = '60px',
   maxWidth = "auto",
-  marginRight = "initial",
+  margin = "initial",
+  borderRadius = '0px',
   fontSize = '14px',
   arrowDown = false,
   arrowRight = false,
@@ -35,7 +36,8 @@ const Button = ({
     height,
     minHeight: height,
     maxWidth,
-    marginRight,
+    margin,
+    borderRadius,
     fontSize
   }
 
