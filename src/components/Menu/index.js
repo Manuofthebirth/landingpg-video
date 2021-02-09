@@ -41,6 +41,18 @@ const Menu = () => {
           <Home size='24'/>
           Home
         </div> 
+        <div className={currentPage === "/a" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectToHome()}>
+          <Home size='24'/>
+          About
+        </div> 
+        <div className={currentPage === "/a" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectToHome()}>
+          <Home size='24'/>
+          Experiência
+        </div> 
+        <div className={currentPage === "/a" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectToHome()}>
+          <Home size='24'/>
+          Skills
+        </div> 
         {/* <div className={currentPage === "/resumos" ? "menu__list__page menu__list__page--selected" : "menu__list__page" } onClick={() => redirectToPag2()}>
           <Activity size='24'/>
           Pag2

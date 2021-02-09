@@ -28,7 +28,7 @@
 }
 
 .menu__back{
-  color: $color-green;
+  color: $color-blue;
   cursor: pointer;
   left: 0;
   top: 27px;
@@ -51,14 +51,14 @@
 .menu__list__page{
   align-items: center;
   display: flex;
-  color: $color-green;
+  color: $color-blue;
   cursor: pointer;
   font-size: 26px;
   height: 80px;
   padding: 0 10%;
   &--selected{
-    background-color: $color-lightest-green;
-    color: $color-green;
+    background-color: $color-light-blue;
+    color: $color-blue;
     transition: background-color .3s ease-in-out;
   }
 }
@@ -73,7 +73,7 @@
     margin-bottom: 18px;
   }
   h3 {
-    color: $color-green;
+    color: $color-dark-blue;
   }
 }
 
