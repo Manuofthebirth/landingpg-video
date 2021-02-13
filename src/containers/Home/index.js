@@ -32,8 +32,8 @@ const Home = () => {
             <Button type={1} style={{width: '80px', height: '40px', minHeight: '40px', fontSize: '12px', borderRadius: '25px'}}>Sobre mim</Button>
 
             <ul className="home__social">
-              <li><Mail /></li>
-              <li><Linkedin /></li>
+              <li><a href="mailto:valentina_regomonteiro@hotmail.com"><Mail /></a></li>
+              <li><a href="https://www.linkedin.com/in/valentinaregomonteiro/" target="_blank" rel="noreferrer"><Linkedin /></a></li>
             </ul>
           </div>
         </figcaption>

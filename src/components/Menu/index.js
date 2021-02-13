@@ -2,7 +2,7 @@ import React from 'react';
 // import axios from 'axios';
 import { useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { X, Home } from 'react-feather';
+import { X, Home, User, FileText, Award  } from 'react-feather';
 
 import Button from '../Button'
 import './index.scss'
@@ -42,15 +42,15 @@ const Menu = () => {
           Home
         </div> 
         <div className={currentPage === "/a" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectToHome()}>
-          <Home size='24'/>
+          <User size='24'/>
           About
         </div> 
         <div className={currentPage === "/a" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectToHome()}>
-          <Home size='24'/>
+          <FileText size='24'/>
           Experiência
         </div> 
         <div className={currentPage === "/a" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectToHome()}>
-          <Home size='24'/>
+          <Award size='24'/>
           Skills
         </div> 
         {/* <div className={currentPage === "/resumos" ? "menu__list__page menu__list__page--selected" : "menu__list__page" } onClick={() => redirectToPag2()}>
