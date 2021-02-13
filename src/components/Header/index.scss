@@ -7,12 +7,11 @@
   width: 90%;
   height: 84px;
   padding: 0 5%;
+  border-bottom: 1px solid $color-lighter-gray;
   position: absolute;
-  z-index: 3;
 
   img {
     height: 38px;
-    z-index: 3;
   }
 
   nav {
@@ -48,16 +47,19 @@
     margin-right: 7px;
     margin-left: 15px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    z-index: 3;
   }
 
   svg {
     color: #fff;
+    z-index: 3;
   }
 }
 
 .header__logo {
   display: flex;
   align-items: center;
+  z-index: 3;
 }
 
 @media (min-width: $screen-md) {

@@ -18,6 +18,13 @@ const Menu = () => {
     dispatch({ type: 'CHANGE_USERMENU_STATUS', payload: false })
   }
 
+  function redirectPage(page) {
+    document.getElementsByClassName("menu menu--visible")[0].style.width = "100vw";
+    closeMenu();
+    setTimeout(() => { history.push(`${page}`) }, 900);
+    setTimeout(() => { document.getElementsByClassName("menu")[0].style.width = null; }, 1000);
+  }
+
   function redirectToHome(){
     history.push("/");
     closeMenu();
@@ -37,19 +44,19 @@ const Menu = () => {
     <div className={menuOpen ? "menu menu--visible" : "menu"}>
       <div className={menuOpen ? "menu__container menu__container--visible" : "menu__container"}>
         <X className="menu__back" onClick={() => closeMenu(false)} size='30' />
-        <div className={currentPage === "/" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectToHome()}>
+        <div className={currentPage === "/" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectPage('/')}>
           <Home size='24'/>
           Home
         </div> 
-        <div className={currentPage === "/a" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectToHome()}>
+        <div className={currentPage === "/about" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectPage('/about')}>
           <User size='24'/>
-          About
+          Sobre Mim
         </div> 
-        <div className={currentPage === "/a" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectToHome()}>
+        <div className={currentPage === "/experience" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectPage('/experience')}>
           <FileText size='24'/>
           Experiência
         </div> 
-        <div className={currentPage === "/a" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectToHome()}>
+        <div className={currentPage === "/skills" ? "menu__list__page menu__list__page--selected" : "menu__list__page"} onClick={() => redirectPage('/skills')}>
           <Award size='24'/>
           Skills
         </div> 

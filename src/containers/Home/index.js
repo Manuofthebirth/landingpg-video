@@ -29,7 +29,7 @@ const Home = () => {
                 Analista de Comunicação Jr
               </p>
             </div>
-            <Button type={1} style={{width: '80px', height: '40px', minHeight: '40px', fontSize: '12px', borderRadius: '25px'}}>Sobre mim</Button>
+            <Button type={1} style={{width: '80px', height: '40px', minHeight: '40px', fontSize: '12px', borderRadius: '25px'}}>Sobre Mim</Button>
 
             <ul className="home__social">
               <li><a href="mailto:valentina_regomonteiro@hotmail.com"><Mail /></a></li>
