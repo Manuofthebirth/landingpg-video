@@ -67,3 +67,15 @@
     margin-right: 10px;
   }
 }
+
+@media (min-width: $screen-lg) {
+  .home__text {
+    h2 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+  }
+}
